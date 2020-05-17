@@ -14,5 +14,13 @@ denominadorF2 = int(input('Digite o denominador da segunda fração: '))
 print('A segunda fração é {}/{}.'.format(numeradorF2, denominadorF2))
 
 soma = (numeradorF1 * denominadorF2 + numeradorF2 * denominadorF1) / (denominadorF1 * denominadorF2)
+print('Soma de frações: {}/{} + {}/{} = {}'
+    .format(numeradorF1, denominadorF1, numeradorF2, denominadorF2, soma))
 
-print('Soma de frações: {}/{} + {}/{} = {}'.format(numeradorF1, denominadorF1, numeradorF2, denominadorF2, soma))
+multiplicacao = (numeradorF1 * denominadorF1) / (numeradorF2 * denominadorF2)
+print('Multiplicação de frações: {}/{} * {}/{} = {}'
+    .format(numeradorF1, denominadorF1, numeradorF2, denominadorF2, multiplicacao))
+
+divisao = (numeradorF1 * denominadorF2) / (numeradorF2 * denominadorF1)
+print('Divisão de frações: {}/{} / {}/{} = {}'
+    .format(numeradorF1, denominadorF1, numeradorF2, denominadorF2, divisao))
