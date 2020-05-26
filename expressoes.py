@@ -1,5 +1,4 @@
-# 
-# a^(b/c) = raiz "c" de a^b 
+# TO DO:
 # a^b*a^c = a^(b+c)
 # a^b/a^c = a^(b-c)
 # a^b^c = a^(a*c)
@@ -22,14 +21,16 @@ for expoente in range(4):
     if expoente == 3:
         print('a³ = {}'.format(a**expoente))
 
-print('P3: a**(-b) = 1/(a**b)')
+print('\nP3: a**(-b) = 1/(a**b)')
 b = int(input('Digite b: '))
 print(b)
 
 print('a**-b = {} = 1/{}'.format(a**-b, a**b))
 
-
-# c = int(input('Digite c: '))
-# print(c)
-
-
+print('\nP4: a**(b/c)\n= raiz de índice "c", de base "a", expoente "b"')
+c = int(input('Digite c: '))
+print(c)
+print('{}**{}/{} = {}^{}'.format(a, b, c, a, b/c))
+print('O índice (c) na radiciação é o denominador do expoente fracionário na exponenciação em R* \nA base (a) na radiciação é a base da exponenciação.\nO expoente (b) da radiciação é o numerador da exponenciação fracionária dividido pelo índice da radiciação (b/c). \nOu seja, quando se eleva um número Z por uma fração obtém-se a raíz do número inteiro.')
+# print('a**(b/c) = {:.3f}'.format(a**(b/c))); output: 1.260;
+print('a**(b/c) = {}'.format(a**(b/c))) # output: 1.2599210498948732
