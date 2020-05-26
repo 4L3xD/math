@@ -1,6 +1,4 @@
-# a¹ = a
-# a⁰ = 1
-# a^-b = 1/a^b
+# 
 # a^(b/c) = raiz "c" de a^b 
 # a^b*a^c = a^(b+c)
 # a^b/a^c = a^(b-c)
@@ -9,6 +7,8 @@
 # (a/b)^c = a^c/b^c
 # (a/b)^-c = (b/a)^c
 
+
+print('Propriedades Exponenciação/Potenciação\n\nP1: a¹ = a, P2: a⁰ = 1\n')
 a = int(input('Digite a: '))
 print(a)
 
@@ -22,7 +22,14 @@ for expoente in range(4):
     if expoente == 3:
         print('a³ = {}'.format(a**expoente))
 
-# b = int(input('Digite b: '))
-# print(b)
+print('P3: a**(-b) = 1/(a**b)')
+b = int(input('Digite b: '))
+print(b)
+
+print('a**-b = {} = 1/{}'.format(a**-b, a**b))
+
+
 # c = int(input('Digite c: '))
 # print(c)
+
+
