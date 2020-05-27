@@ -1,6 +1,3 @@
-# TO DO:
-# (a/b)^-c = (b/a)^c
-
 print('Propriedades Exponenciação/Potenciação\n\nP1: a¹ = a, P2: a⁰ = 1\n')
 a = int(input('Digite a: '))
 print(a)
@@ -51,3 +48,8 @@ print('({}**{})*({}**{}) = {}'.format(a, b, b, c, a**b*b**c))
 # (a/b)^c = a^c/b^c
 print('\nP9: (a/b)**c = a**c/b**c')
 print('({}/{})**{} = {}'.format(a, b, c, (a/b)**c))
+
+# (a/b)^-c = (b/a)^c
+print('\nP10: (a/b)**(-c) = (b/a)**c')
+print('({}/{})**{} = {}/{}**{} = {}'.format(a, b, -c, b, a, c, (a/b)**(-c)))
+print((b/a)**c)
