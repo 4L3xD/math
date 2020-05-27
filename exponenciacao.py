@@ -1,6 +1,4 @@
 # TO DO:
-# a^c*b^c = (a^c)*(b^c)
-# (a/b)^c = a^c/b^c
 # (a/b)^-c = (b/a)^c
 
 print('Propriedades Exponenciação/Potenciação\n\nP1: a¹ = a, P2: a⁰ = 1\n')
@@ -41,7 +39,15 @@ print('\nP6: a**b/a**c = a**(b-c)')
 print('{}**{}/{}**{} = {}'.format(a, b, a, c, a**b/a**c))
 print('{}**({}-{}) = {}'.format(a, b, c, a**(b-c)))
 
-# a^b^c = a^(a*c)
+# (a^b)^c = a^(a*c)
 print('\nP7: (a**b)**c = a**(b*c)')
 print('({}**{})**{} = {}'.format(a, b, c, (a**b)**c))
 print('{}**({}*{}) = {}'.format(a, b, c, a**(b*c)))
+
+# a^c*b^c = (a^c)*(b^c)
+print('\nP8: a**b*b**c = (a**b)*(b**c)')
+print('({}**{})*({}**{}) = {}'.format(a, b, b, c, a**b*b**c))
+
+# (a/b)^c = a^c/b^c
+print('\nP9: (a/b)**c = a**c/b**c')
+print('({}/{})**{} = {}'.format(a, b, c, (a/b)**c))
