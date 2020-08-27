@@ -36,12 +36,12 @@ print('\nP6: a**b/a**c = a**(b-c)')
 print('{}**{}/{}**{} = {}'.format(a, b, a, c, a**b/a**c))
 print('{}**({}-{}) = {}'.format(a, b, c, a**(b-c)))
 
-# (a^b)^c = a^(a*c)
+# (a^b)^c = a^(b*c)
 print('\nP7: (a**b)**c = a**(b*c)')
 print('({}**{})**{} = {}'.format(a, b, c, (a**b)**c))
 print('{}**({}*{}) = {}'.format(a, b, c, a**(b*c)))
 
-# a^c*b^c = (a^c)*(b^c)
+# (a*b)^c = a^c*b^c
 print('\nP8: a**b*b**c = (a**b)*(b**c)')
 print('({}**{})*({}**{}) = {}'.format(a, b, b, c, a**b*b**c))
 
